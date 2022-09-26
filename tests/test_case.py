@@ -3,8 +3,8 @@ from sqlalchemy import create_engine
 from sqlalchemy_utils.functions.database import database_exists , create_database
 
 import json
-from db.database import Base , LSession
-from main import app, get_db
+from fast_api_proj.db.database import Base , LSession
+from fast_api_proj.main import app, get_db
 import pytest
 
 SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/fast_api"
