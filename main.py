@@ -7,8 +7,8 @@ from db.database import LSession , engine
 from typing import List
 # from db.crud import logger
 
-app = FastAPI()
 
+app = FastAPI()
 def get_db():
 	db = LSession()
 	crud.logger.info('Creating Session')
@@ -48,6 +48,4 @@ def update_user(emp_id : int ,emp : schema.EmployeeUpdate,db : Session = Depends
 		raise HTTPException(status_code=404, detail="User not found")
 	return crud.update_employee(db , emp_id=emp_id ,emp = emp)
 
-if __name__ == "__main__":
 
-	uvicorn.run(app,host="127.0.0.1",port=8000)

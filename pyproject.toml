@@ -13,6 +13,7 @@ fastapi="0.85.0"
 pydantic="1.10.2"
 SQLAlchemy="1.4.41"
 uvicorn="0.18.3"
+psycopg2-binary = "*"
 
 
 [tool.poetry.dev-dependencies]
