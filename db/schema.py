@@ -26,6 +26,15 @@ class EmployeeUpdate(BaseModel):
 	location : Optional[str] = None
 	is_active : Optional[str] = None
 
+class CompanyBase(BaseModel):
+	name : str
+	contact : str
+	location : str
+
+class CompanyProductUpdate(CompanyBase):
+	active_products : str
+	inactive_products : str
+
 
 class LogConfig(BaseModel):
     """Logging configuration to be set for the server"""
