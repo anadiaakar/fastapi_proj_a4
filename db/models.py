@@ -10,4 +10,5 @@ class Employee(Base):
 	location = sqlalchemy.Column(sqlalchemy.String)
 	is_active= sqlalchemy.Column(sqlalchemy.Boolean, default = True)
 	password = sqlalchemy.Column(sqlalchemy.String)
+	contact = sqlalchemy.Column(sqlalchemy.String)
 
